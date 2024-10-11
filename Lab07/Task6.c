@@ -17,10 +17,10 @@ int main() {
       
   }
 
-firsloop:
+firstloop:
   do{
     i++;
-    goto secondloop
+    goto secondloop;
 
   }while(i < size);
 
@@ -29,4 +29,5 @@ secondloop:
  do{
    if(arr[i] == arr[j]) printf("%d is repeated in array\n", arr[i]);
  }while(j < size);
+ goto firstloop;
 }
