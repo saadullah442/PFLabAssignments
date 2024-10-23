@@ -1,10 +1,10 @@
 #include <stdio.h>
-
+#include <limits.h>
 int main(){
 	int size = 3;
 	int i,j;
 	int matrix[size][size];
-	int sdl_pt = 9999999;
+	int sdl_pt = INT_MAX;
 	int sdl_i = 0;
 	int sdl_j = 0;
 	
@@ -34,12 +34,12 @@ int main(){
 			// Changing row 
 			if(matrix[i][sdl_j] > sdl_pt) {
 				
-				sdl_pt = 9999999;	
+				sdl_pt = INT_MAX;	
 				break;
 			}
 		}
-		if (sdl_pt != 9999999) printf("Saddle point is: %d\n", sdl_pt);
-		sdl_pt = 9999999;
+		if (sdl_pt != INT_MAX) printf("Saddle point is: %d\n", sdl_pt);
+		sdl_pt = INT_MAX;
 		sdl_i++;		
 	}
 	
