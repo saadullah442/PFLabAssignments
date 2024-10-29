@@ -18,7 +18,9 @@ int main(){
 		// going through each letter in word
 		while(start < end){
 			// get out of loop if word not palindrome
-			printf("Condition: %d\n", (char)word_arr[i][start] != (char)word_arr[i][end]);
+			printf(" %c\n", word_arr[i][start]);
+			printf(" %c\n", word_arr[i][end]);
+			printf("Condition: %d\n", word_arr[i][start] != word_arr[i][end]);
 			if((char)word_arr[i][start] != (char)word_arr[i][end]) {
 			    is_palindrome = 0;	
 				printf("%s is not a palindrome\n", word_arr[i]);	
