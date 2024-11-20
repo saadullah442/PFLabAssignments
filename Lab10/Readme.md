@@ -1,1 +1,1 @@
-## Foldere for Lab 10 Tasks
+## Folder for Lab 10 Tasks
