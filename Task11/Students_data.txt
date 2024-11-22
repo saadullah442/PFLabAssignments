@@ -1,0 +1,97 @@
+*
+Alice
+1
+Math
+101
+Mr. A
+Physics
+102
+Dr. B
+Chemistry
+103
+Prof. C
+*
+Bob
+2
+Biology
+101
+Mr. A
+History
+102
+Dr. B
+Math
+103
+Prof. C
+*
+Charlie
+3
+Computer
+101
+Mr. A
+English
+102
+Dr. B
+*
+David
+4
+Math
+101
+Mr. A
+Biology
+102
+Dr. B
+*
+Eva
+5
+Physics
+101
+Mr. A
+History
+102
+Dr. B
+*
+Frank
+6
+Chemistry
+101
+Mr. A
+Computer
+102
+Dr. B
+*
+Grace
+7
+English
+101
+Mr. A
+Biology
+102
+Dr. B
+*
+Hannah
+8
+Math
+101
+Mr. A
+Chemistry
+102
+Dr. B
+*
+Ivy
+9
+Physics
+101
+Mr. A
+Computer
+102
+Dr. B
+*
+Jack
+10
+History
+101
+Mr. A
+English
+102
+Dr. B
+*
