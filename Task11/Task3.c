@@ -27,10 +27,17 @@ int main(){
 		ENGLISH
 	};	
 	enum course student_courses;
+	printf("MATH: %d\n", MATH);
+	printf("PHYSICS: %d\n", PHYSICS);
+	printf("CHEMISTRY: %d\n", CHEMISTRY);
+	printf("BIOLOGY: %d\n", BIOLOGY);
+	printf("HISTORY: %d\n", HISTORY);
+	printf("COMPUTER: %d\n", COMPUTER);
+	printf("ENGLISH: %d\n", ENGLISH);
 	int total_students[7];
 	for(int i =0; i< 7;i++){
-	 	total_students[0] = 0;
-		printf("%d\n", total_students[0]);
+	 	total_students[i] = 0;
+		printf("%d\n", total_students[i]);
 	}
 	struct student students[10] = {
         {"Alice", 1, {{"Math", 101, "Mr. A"}, {"Physics", 102, "Dr. B"}, {"Chemistry", 103, "Prof. C"}}, 3},
@@ -92,20 +99,9 @@ int main(){
 				printf("%c", buffer[i]);
 				i++;
 			}
+			// removing \\n as last character
 			buffer[i - 1] = '\0';
-			// // printf("\n");
-			// printf("i is: %d\n", i);
-			// printf("After removing last index value\n");
-			// printf("Course is: ");
-			// i = 0;
-			// while(buffer[i] != '\0') {
-			// 	printf("%c", buffer[i]);
-			// 	i++;
-			// }
-			// // printf("\n");
-			// printf("i is: %d\n", i);
-			// printf("strcmp(buffer, Biology): %d", strcmp(buffer, "Biology"));
-			// Checking which course student is enrolled in
+			
 			if(!strcmp(buffer, "Biology")){
 				printf("Choose biology\n");
 				total_students[BIOLOGY]++;
@@ -144,19 +140,14 @@ int main(){
 		else printf("\n");
 	}
 	fclose(file);
-	printf("MATH: %d\n", MATH);
-	printf("BIOLOGY: %d\n", BIOLOGY);
-	printf("HISTORY: %d\n", HISTORY);
-	printf("PHYSICS: %d\n", PHYSICS);
-	printf("COMPUTER: %d\n", COMPUTER);
-	printf("CHEMISTRY: %d\n", CHEMISTRY);
 	
-	printf("Math: %d\n", total_students[i]);
-	printf("Physics: %d\n", total_students[i]);
-	printf("Chemistry: %d\n", total_students[i]);
-	printf("Biology: %d\n", total_students[i]);
-	printf("History: %d\n", total_students[i]);
-	printf("Computer: %d\n", total_students[i]);
+	
+	printf("Math: %d\n", total_students[MATH]);
+	printf("Physics: %d\n", total_students[PHYSICS]);
+	printf("Chemistry: %d\n", total_students[CHEMISTRY]);
+	printf("Biology: %d\n", total_students[BIOLOGY]);
+	printf("History: %d\n", total_students[HISTORY]);
+	printf("Computer: %d\n", total_students[COMPUTER]);
 	
 	
 	
